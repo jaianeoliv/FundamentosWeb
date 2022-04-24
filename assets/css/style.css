@@ -1,0 +1,108 @@
+/*
+Estilos da página index.html
+*/
+
+
+.center{
+    text-align: center;
+}
+
+.justify{
+  text-align: justify;
+}
+
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li{
+  display: inline;
+  padding: 16px;
+
+}
+
+/*decoração do texto que contém link*/
+#menu li a{
+  text-decoration: none;
+  color: #000000;
+}
+
+#menu li a:hover{
+  color: #808080;
+}
+
+
+li::before {  
+transform: scaleX(0);
+transform-origin: bottom;
+}
+
+li:hover::before {
+transform: scaleX(1);
+transform-origin: bottom;
+}
+
+li::before {
+content: " ";
+display: block;
+position: absolute;
+top: 0; right: 0; bottom: 0; left: 0;
+inset: 0 0 0 0;
+background: hsl(200 100% 80%);
+z-index: -1;
+transition: transform .5s ease;
+}
+
+li {
+position: relative;
+font-size: 16px;
+}
+
+body {
+font-family: system-ui, sans-serif;
+}
+
+
+.p-30{
+  padding: 30px;;
+}
+
+.br-50{
+  border-radius: 50%;
+}
+
+.wh-300{
+  width: 300px;
+  height: 300px;
+}
+
+.tm-social{
+  width: 30px;
+  height: 30px;
+}
+
+.mb-50{
+  margin-bottom: 50px;
+}
+
+
+
+/*
+Estilos da página contato.html
+*/
+
+.ml-50{
+  margin-left: 50px;
+}
+
+/*
+Estilos da página sobre.html
+*/
+
+.back-test{
+  background-color: #7a7978;
+  color: #FFFFFF;
+}
