@@ -35,6 +35,7 @@ Estilos da página index.html
 }
 
 
+
 li::before {  
 transform: scaleX(0);
 transform-origin: bottom;
@@ -74,9 +75,9 @@ font-family: system-ui, sans-serif;
   border-radius: 50%;
 }
 
-.wh-300{
-  width: 300px;
-  height: 300px;
+.wh-400{
+  width: 400px;
+  height: 400px;
 }
 
 .tm-social{
@@ -88,7 +89,10 @@ font-family: system-ui, sans-serif;
   margin-bottom: 50px;
 }
 
-
+.wh-alien{
+  width: 312px;
+  height: 312px;
+}
 
 /*
 Estilos da página contato.html
@@ -103,6 +107,7 @@ Estilos da página sobre.html
 */
 
 .back-test{
-  background-color: #7a7978;
-  color: #FFFFFF;
+  background-color: #add8e6;
+  
 }
+

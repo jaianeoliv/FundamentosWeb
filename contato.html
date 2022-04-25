@@ -20,30 +20,31 @@
         </li>
     </ul>
 
-    <h1 class="center">Entre em contato comigo, humano</h1>
+    <h1 class="center">Em caso de dúvidas disque: 999-SPACE-SHIP</h1>
 
     <div class="container mb-50">
         <div>
             <form>
                 <label for="nome">Nome</label><br>
-                <input type="text" id="nome">
-                <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id='txtNome'></div>
                 <br>
                 <label for="email">Email</label><br>
-                <input type="email" id="email">
-                <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id='txtEmail'></div>
                 <br>
                 <label for="assunto">Assunto</label><br>
-                <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
+                <textarea name="assunto" id="assunto" cols="50" rows="10" onkeyup="validaAssunto()"></textarea>
+                <div id='txtAssunto'></div>
                 <br>
                 <br>
-                <button>Enviar</button>
+                <button onclick="enviar()">Enviar</button>
                 </form>
         </div>
         <div class="ml-50">
             <p>15/18 Blanck St, Ormeau QLD 4208, Austrália</p>
             <p>(Encontre-me se for capaz!)</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24157.92174489931!2d153.24924697675473!3d-27.781296151437033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9114d6db40cfc9%3A0x621be710dec70577!2sNoego%20Coffee%20Co!5e1!3m2!1spt-PT!2sbr!4v1650497375356!5m2!1spt-PT!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24157.92174489931!2d153.24924697675473!3d-27.781296151437033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9114d6db40cfc9%3A0x621be710dec70577!2sNoego%20Coffee%20Co!5e1!3m2!1spt-PT!2sbr!4v1650497375356!5m2!1spt-PT!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
         </div>
 
     </div>
@@ -73,6 +74,8 @@
     </footer>
     
         
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>
+
